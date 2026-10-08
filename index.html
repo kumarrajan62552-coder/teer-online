@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,58 +106,20 @@
             <span>OFFICIAL APP</span>
         </div>
 
-        <!-- App Logo Card -->
-        <div class="w-36 h-36 sm:w-40 sm:h-40 bg-white rounded-3xl p-3 shadow-card flex items-center justify-center mb-6 border border-teal-50 relative shine-effect">
-            <div class="w-full h-full rounded-2xl bg-gradient-to-br from-[#0B3C38] via-[#0E4C46] to-[#062926] p-2 flex items-center justify-center relative border-2 border-brand-gold/60 shadow-inner">
-                <!-- Outer Decorative Gold Circle -->
-                <div class="absolute inset-1 rounded-xl border border-brand-gold/40 border-dashed pointer-events-none"></div>
-                
-                <!-- Center SVG Logo Emblem -->
-                <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-md" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Outer Metallic Gold Ring -->
-                    <circle cx="100" cy="100" r="90" fill="none" stroke="url(#goldGradient)" stroke-width="8" />
-                    <circle cx="100" cy="100" r="82" fill="none" stroke="#AA7C11" stroke-width="1.5" />
-                    
-                    <!-- Decorative Radial Pattern -->
-                    <circle cx="100" cy="100" r="72" fill="#0A3B36" stroke="url(#goldGradient)" stroke-width="2" />
-                    
-                    <!-- Target Concentric Rings -->
-                    <circle cx="100" cy="90" r="38" fill="none" stroke="url(#goldGradient)" stroke-width="2.5" opacity="0.8" />
-                    <circle cx="100" cy="90" r="26" fill="none" stroke="url(#goldGradient)" stroke-width="2" opacity="0.9" />
-                    <circle cx="100" cy="90" r="14" fill="none" stroke="url(#goldGradient)" stroke-width="2" />
-                    <circle cx="100" cy="90" r="5" fill="#D4AF37" />
-
-                    <!-- Bow and Arrow Graphic -->
-                    <!-- Bow String -->
-                    <line x1="60" y1="120" x2="140" y2="120" stroke="#E6CA65" stroke-width="1.5" />
-                    <!-- Bow Curve -->
-                    <path d="M 60 120 Q 100 50 140 120" fill="none" stroke="url(#goldGradient)" stroke-width="5" stroke-linecap="round" />
-                    <!-- Arrow Shaft -->
-                    <line x1="100" y1="50" x2="100" y2="135" stroke="url(#goldGradient)" stroke-width="3.5" stroke-linecap="round" />
-                    <!-- Arrow Head -->
-                    <polygon points="100,40 94,54 106,54" fill="#FCE082" />
-                    <!-- Arrow Fletching -->
-                    <path d="M 94 128 L 100 120 L 106 128" fill="none" stroke="#D4AF37" stroke-width="2" />
-
-                    <!-- Circular Banner Ribbon for TEER ONLINE text -->
-                    <path id="textArc" d="M 35 125 A 72 72 0 0 0 165 125" fill="none" />
-                    
-                    <text font-family="Inter, sans-serif" font-weight="900" font-size="14.5" fill="url(#goldGradient)" letter-spacing="2" text-anchor="middle">
-                        <textPath href="#textArc" startOffset="50%">TEER ONLINE</textPath>
-                    </text>
-
-                    <!-- Gradients -->
-                    <defs>
-                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#FFE898" />
-                            <stop offset="30%" stop-color="#D4AF37" />
-                            <stop offset="70%" stop-color="#AA7C11" />
-                            <stop offset="100%" stop-color="#FDF0A6" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
+        <!-- ========================================================================= -->
+        <!-- LOGO SECTION: Apna logo yaha badle! Badle 'src="..."' apni image URL se. -->
+        <!-- EXAMPLE: src="https://yourwebsite.com/logo.png" or src="logo.png"        -->
+        <!-- ========================================================================= -->
+        <div class="w-36 h-36 sm:w-40 sm:h-40 bg-white rounded-3xl p-3 shadow-card flex items-center justify-center mb-6 border border-teal-50 relative shine-effect overflow-hidden">
+            <img 
+                id="appLogo" 
+                src="logo.jpg" 
+                alt="Teer Online Logo" 
+                class="w-full h-full object-cover rounded-2xl shadow-inner border border-teal-100/50"
+                onerror="this.onerror=null; this.src='https://placehold.co/300x300/0D4E48/ffffff?text=Logo';"
+            />
         </div>
+        <!-- ========================================================================= -->
 
         <!-- Main Heading & Subtitle -->
         <h1 class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight mb-3 text-center">
